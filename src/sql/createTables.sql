@@ -1,3 +1,7 @@
+CREATE DATABASE AirForceDB;
+
+USE AirForceDB;
+
 create table AIRCRAFT(
     AID char(5) NOT NULL,
     _Type_ tinyint,
