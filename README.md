@@ -23,9 +23,9 @@ git clone <repository_url>
 cd src
 ```
 ### Step 3 : Set the class path.
-Set the classpath to include the MySQL JDBC driver (replace 'P' with the actual path to mysql-connector-java-x.x.x.jar):
+Set the classpath to include the MySQL JDBC driver (replace P with the actual path to mysql-connector-java-x.x.x.jar):
 ```
-export CLASSPATH = 'P'
+export CLASSPATH = 'P:.'
 ```
 ### Step 4 : Compile and Run the Java Program
 ```

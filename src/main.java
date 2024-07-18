@@ -14,8 +14,8 @@ public class main {
     static final String DB_URL = "jdbc:mysql://localhost:3306?useSSL=false";
 
     // Database credentials
-    static String USER = "root";// add your user
-    static String PASSWORD = "pass";// add password
+    static String USER = "_xyz_";// add your user or enter through terminal
+    static String PASSWORD = "_xyz_";// add password or enter through terminal
 
     public static void main(String[] args) throws SQLException {
         Connection conn = null;
@@ -204,11 +204,9 @@ public class main {
             // Execute each SQL statement
             try (Statement statement = connection.createStatement()) {
                 for (String sqlStatement : sqlStatements) {
-                    // Trim excess whitespace and newline characters
                     String trimmedSqlStatement = sqlStatement.trim();
                     if (!trimmedSqlStatement.isEmpty()) {
-                        // Execute the SQL statement
-                        statement.execute(trimmedSqlStatement);
+                        statement.execute(trimmedSqlStatement); // Execute the SQL statement
                     }
                 }
             }
